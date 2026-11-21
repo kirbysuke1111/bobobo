@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>3分で読める！スパイ防犯システム 説明書</title>
+<style>
+  body {
+    background-color: #090d16;
+    color: #e6edf3;
+    font-family: "メイリオ", sans-serif;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 20px;
+  }
+  h1 {
+    color: #00ff88;
+    border-bottom: 3px solid #00ff88;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+  .badge {
+    display: inline-block;
+    background-color: #00ff88;
+    color: #090d16;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+  h2 {
+    color: #58a6ff;
+    border-left: 5px solid #58a6ff;
+    padding-left: 10px;
+    margin-top: 28px;
+  }
+  h3 {
+    color: #ffa657;
+    margin-top: 18px;
+  }
+  .box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 12px 0;
+  }
+  @keyframes siren {
+    0% { border-color: #ff4444; box-shadow: 0 0 15px rgba(255, 68, 68, 0.6); }
+    50% { border-color: #30363d; box-shadow: none; }
+    100% { border-color: #ff4444; box-shadow: 0 0 15px rgba(255, 68, 68, 0.6); }
+  }
+  .alert-box {
+    background-color: #1f1216;
+    border: 2px solid #ff4444;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 12px 0;
+    animation: siren 1.5s infinite;
+  }
+  .warn {
+    color: #ff7b72;
+    font-weight: bold;
+  }
+  .key {
+    background-color: #21262d;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .silver-logo {
+    background: linear-gradient(135deg, #e0e0e0, #9e9e9e);
+    color: #111;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .feature-item {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <div style="text-align:center;">
+    <span class="badge">3分で読める！スピードマニュアル</span>
+  </div>
+  <h1>超ハイテク・スパイ防犯システム 説明書</h1>
+  <p style="text-align:center;">制作：yu ／ micro:bit V2（<strong>2台専用</strong>・磁石センサー＆360度画面回転）</p>
+
+  <h2>1. すごい4つの機能</h2>
+  <div class="feature-grid">
+    <div class="feature-item"><strong>磁石自動センサー</strong><br>どんな磁石も自動計算！離れた瞬間に即反応します。</div>
+    <div class="feature-item"><strong>360度画面回転</strong><br>上下・左右どの向きでもマークが正しく回転！</div>
+    <div class="feature-item"><strong>お布団貫通電波</strong><br>電波MAX＆連射で、お布団の中でもバッチリ届きます。</div>
+    <div class="feature-item"><strong>音量MAXサイレン</strong><br>タッパー越しでも響く超高音パトカーサイレン搭載！</div>
+  </div>
+
+  <h2>2. 準備するもの（2台セット）</h2>
+  <div class="box">
+    <ul>
+      <li><strong>micro:bit V2（2台）</strong>＋ 単4電池ボックス（※2台とも同じプログラムを入れる）</li>
+      <li><strong>親機（1台）</strong>：自分が隠れて手に持つモニター。<strong>完全無音</strong>なので居場所がバレません。</li>
+      <li><strong>子機（1台）</strong>：ドアや箱に見張りで置くセンサー。タッパーに入れると壊れず安全です。</li>
+      <li><strong>磁石（1個）</strong>：子機のすぐ横（1〜2cm）に近づけてセットします。</li>
+    </ul>
+  </div>
+
+  <h2>3. かんたん4ステップ</h2>
+
+  <div class="box">
+    <h3>① 電源オン！</h3>
+    <p>2台に電池をつなぎます。画面の真ん中に小さなひし形（◆）が出たらOK！</p>
+
+    <h3>② 子機をセットする</h3>
+    <p><strong>※親機は何も押さずにそのまま持ちます（お布団の中もOK！）。</strong></p>
+    <p>ドアやフタを閉めて磁石を近づけ、子機の <span class="key">A</span> または <span class="key">B</span> ボタンを1回押します。</p>
+    <p class="warn">【注意】「3・2・1・ピーン！」が鳴り終わる前に手を離してください！</p>
+    <p>セット完了後は、<strong>真ん中のLEDが1粒だけ点滅</strong>します。</p>
+  </div>
+
+  <div class="alert-box">
+    <h3>③ 侵入者を発見！（警報発動）</h3>
+    <p>誰かが開けて<strong>磁石が離れる</strong>と、子機だけが<strong>音量MAXサイレン</strong>を鳴らします！</p>
+    <p>同時に、親機の画面に「！」と「×」が<strong>完全無音</strong>で点滅して知らせます。</p>
+  </div>
+
+  <div class="box">
+    <h3>④ パスワード解除＆自動復活</h3>
+    <p>親機のボタンを <span class="key">A</span> → <span class="key">B</span> → <span class="key">A</span> の順に押すと警報が止まります！</p>
+    <p>（※本体の <span class="silver-logo">銀色のロゴマーク</span> の位置を目印にすると上下の向きがわかりやすいです）</p>
+    <ul>
+      <li><strong>自動リセット</strong>：3文字間違えても自動で空っぽに戻るので、すぐ押し直せます。</li>
+      <li><strong>自動復活</strong>：ドアを閉めて磁石を戻すと、<strong>1.5秒後に自動で次の見張り</strong>に戻ります！</li>
+    </ul>
+  </div>
+
+  <h2>4. やり直したいとき</h2>
+  <div class="box">
+    <p>子機を最初の待機画面（◆）に戻すときは、<span class="key">AとBボタンを同時押し</span>してください。</p>
+  </div>
+
+</body>
+</html>
