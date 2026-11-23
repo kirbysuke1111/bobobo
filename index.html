@@ -160,9 +160,18 @@
     <p><strong>Q. 画面の左右に2つの点（・　・）が光ったまま見張りに戻りません！</strong><br>
     A. 最初に登録した位置まで磁石が戻っていない合図です。ドアをしっかり閉めて磁石を近づけるか、<span class="key">AとBボタンを同時押し</span>して再登録（R表示）してください。</p>
   </div>
-<p style="text-align:center; margin-top:20px;">
-  <img src="https://hits.sh" alt="カウンター">
 </p>
+<div style="text-align:center; margin-top:25px;">
+  <span id="counter-box" style="display:inline-block; background:#161b22; border:2px solid #00ff88; color:#00ff88; padding:6px 18px; border-radius:20px; font-weight:bold;">
+    👀 閲覧回数：読み込み中...
+  </span>
+</div>
+
+<script>
+  let count = Number(localStorage.getItem('bouhan_visit_count') || 0) + 1;
+  localStorage.setItem('bouhan_visit_count', count);
+  document.getElementById('counter-box').innerText = '👀 この端末での閲覧回数：' + count + ' 回';
+</script>
 
 </body>
 </html>
